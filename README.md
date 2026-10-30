@@ -16,13 +16,13 @@ application deployment or prototype required.
 | --- | --- |
 | [README.md](README.md) | Candidate details, submission guide, and AI-use disclosure |
 | [WRITEUP.md](WRITEUP.md) | Answers to the five questions, scoring rubric, assumptions, and sample results |
-| [PROMPTS.md](PROMPTS.md) | Exact extraction prompt templates, schema construction, and validation contract |
+| [PROMPTS.md](PROMPTS.md) | Exact system/user extraction messages and clearly marked runtime inputs |
 | [ranking.json](ranking.json) | Expected outcomes for proposals A–E in the requested format |
-| [diagram/](diagram/) | Process-flow diagram; separate diagram export is pending |
+| [diagram/process-flow.png](diagram/process-flow.png) | Process-flow diagram showing human checkpoints, AI extraction, rules, and outcome branches |
 | [.gitignore](.gitignore) | Excludes local source material, planning records, and credentials |
 
-The diagram will be exported separately as `diagram/process-flow.png` (or one
-JPG/PDF instead). Until that artifact is present, the submission is incomplete.
+The landscape diagram groups inputs, extraction, review, and outcomes, from
+approved criteria and proposal upload through the final human award decision.
 
 ## Reading the results
 
@@ -35,14 +35,14 @@ installation dates.
 
 ## AI-use disclosure
 
-I used OpenAI Codex to help analyze the brief, refine the workflow, draft the
-documentation and extraction prompts, and check scoring arithmetic. I reviewed
-the suggestions and accepted a correction to the initial claim that every
-criteria change could reuse cached facts without another AI call: changing an
-experience window can require additional evidence, so the design now checks
-whether the saved facts are sufficient. I also accepted an explicit
-worked-example assumption for A's and E's five-year experience counts instead
-of presenting their broad date ranges as verified qualifying experience.
+I researched the approach and supplied the finalized design plan that forms
+the basis of this submission. I used OpenAI Codex to review that plan against
+the brief, refine edge-case handling, draft the submission documents and
+extraction prompts, create the process-flow diagram, and verify scoring
+arithmetic. During review, I challenged
+the AI-generated PROMPTS.md for including unnecessary schema-generation
+documentation and requested a simpler presentation of the actual system and
+user messages to match the brief's prompt requirement more directly.
 
 Only proposal letters and derived design/results are included; the source brief
 and original proposal text are excluded. No live extraction model was run for
