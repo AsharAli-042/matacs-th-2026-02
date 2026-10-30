@@ -1,0 +1,22 @@
+# Local source material and planning records: not part of the public submission.
+/Question Doc/
+/AGENTS.md
+/.AGENTS.md
+/FINALIZED_PLAN.md
+/PLAN_REVIEW.md
+/DIAGRAM_HANDOFF.md
+/PUSH_TO_GITHUB.md
+/.agents/
+/.codex/
+/.aws/
+
+# Credentials and local/generated files.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+.venv/
+.DS_Store
+Thumbs.db
